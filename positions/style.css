@@ -13,6 +13,7 @@
   position: relative;
   left: 100px;
   top: 100px;
-
-  /* position:relative; дает возможность сдвать обекты на другие обекты и писать просто left,right не получиться оно дает    */
 }
+
+  /* position:relative; дает возможность сдвигать обекты на другие обекты и писать просто left,right а не padding или marging  left,right не действуют без position:relative; */
+
