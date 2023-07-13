@@ -59,10 +59,10 @@
 // console.log(checkNumber(1, 100, 50));
 // console.log(checkNumber(-100, 100, -101));
 
-function calculateSquare(a, b) {
-  return a * b;
-}
+// function calculateSquare(a, b) {
+//   return a * b;
+// }
 
-console.log(calculateSquare(4, 6)); 
-console.log(calculateSquare(7, 3)); 
-console.log(calculateSquare(10, 10)); 
+// console.log(calculateSquare(4, 6)); 
+// console.log(calculateSquare(7, 3)); 
+// console.log(calculateSquare(10, 10)); 

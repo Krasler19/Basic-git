@@ -69,24 +69,23 @@
 
 // Напишіть функцію calcTotalPrice(stones, stoneName), яка приймає масив об'єктів та рядок з назвою каменю. Функція рахує і повертає загальну вартість каміння з таким ім'ям, ціною та кількістю з об'єкта
 
-const stones = [
-  { name: "Смарагд", price: 1300, quantity: 4 },
-  { name: "Діамант", price: 2700, quantity: 3 },
-  { name: "Сапфір", price: 400, quantity: 7 },
-  { name: "Щебінь", price: 200, quantity: 2 },
-];
+// const stones = [
+//     { name: "Смарагд", price: 1300, quantity: 4 },
+//     { name: "Діамант", price: 2700, quantity: 3 },
+//     { name: "Сапфір", price: 400, quantity: 7 },
+//     { name: "Щебінь", price: 200, quantity: 2 },
+// ];
 
-const totalValue = calcTotalPrice(stones, "Діамант");
-console.log(totalValue);
+// const totalValue = calcTotalPrice(stones, "Діамант");
+// console.log(totalValue);
 
-function calcTotalPrice(stones, stoneName) {
+// function calcTotalPrice(stones, stoneName) {
 
-  for (let i = 0; i < stones.length; i++) {
-    const stone = stones[i];
+//     for (let i = 0; i < stones.length; i++) {
+//         const stone = stones[i];
 
-    if (stone.name === stoneName) {
-      return stone.price * stone.quantity;
-    }
-  }
-}
-
+//         if (stone.name === stoneName) {
+//             return stone.price * stone.quantity;
+//         }
+//     }
+// }
