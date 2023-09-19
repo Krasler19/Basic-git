@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.menu {
+    a {
+        color: #383938;
+        text-align: right;
+        font-family: Roboto, sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 11.05px;
+        letter-spacing: 0.663px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-right: 31px;
+    }
+
+    margin-right: 100px;
+    margin-left: 70px;
+}
+
+.btn {
+    color: #6E6D7A;
+    text-align: right;
+    font-family: Roboto, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11.05px;
+    letter-spacing: 0.663px;
+    text-transform: uppercase;
+    padding: 15px 33px;
+    border-radius: 8px;
+    background: #F5F6F9;
+    border: none;
+}
+
+header {
+    @include flex-between;
+}
+
+h1 {
+    color: #383938;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 78px;
+    letter-spacing: 3.12px;
+}
+
+main {
+    text-align: center;
+
+    .main-img {
+        width: 100%;
+    }
+}
+
+.div-tasks {
+    @include flex-between;
+    margin-top: 132px;
+
+    .task-item {
+        border-left: 1px solid #EDEEF3;
+        padding-left: 51px;
+        padding-right: 51px;
+
+        &>p {
+            width: 60%;
+            color: #6E6D7A;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 37.44px;
+        }
+    }
+}
+
+
+
+.benefit-item {
+    text-align: center;
+
+    h3 {
+        color: #383938;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 52.65px;
+        letter-spacing: 1.56px;
+        margin-top: 238px;
+    }
+
+    .benefit-subtitle {
+        color: #6E6D7A;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29.25px;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 72px;
+    }
+}
+
+h4 {
+    color: #383938;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.65px;
+    letter-spacing: 1.56px;
+    margin-top: 261px;
+}
+
+
+h5 {
+    color: #383938;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.76px;
+}
+
+.benefits-list {
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .task-item {
+        width: 20%;
+
+        p {
+            width: 80%;
+            font-size: 10px;
+            margin-top: 12px;
+            line-height: 23px;
+        }
+    }
+}
+
+.btn-second {
+    color: #6E6D7A;
+    background-color: white;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11.7px;
+    letter-spacing: 2.34px;
+    text-transform: uppercase;
+    width: 258px;
+    height: 60px;
+    border: 1px solid #6E6D7A;
+    margin: 0 auto;
+    margin-top: 78px;
+    border-radius: 8px;
+}
+
+h6 {
+    color: #383938;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.65px;
+    letter-spacing: 1.56px;
+    margin: 0;
+}
+
+.download-link-container {
+    text-align: center;
+}
+
+.advertising {
+    text-align: center;
+}
+
+.headers {
+    margin-top: 259px;
+}
+
+.headerr {
+    margin-bottom: 70px;
+}
+
+
+
+footer {
+    border-top: 1px solid #EDEEF3;
+    padding: 90px 0;
+    @include flex-between;
+    align-items: start;
+
+    &.container {
+        margin-top: 170px;
+    }
+
+    .footer-menu {
+        @include flex-column;
+        gap: 26px;
+
+        .name-menu {
+            color: #6E6D7A;
+            font-family: Roboto, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 13px;
+        }
+
+        .menu-item {
+            color: #6E6D7A;
+            font-family: Roboto, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 13px;
+            text-decoration: none;
+        }
+
+    }
+}
